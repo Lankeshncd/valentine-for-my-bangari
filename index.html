@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Bangari 💖</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Zeyada&family=Playfair+Display:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= AUDIO ================= -->
+<audio id="music" src="music.mp3" loop></audio>
+<audio id="noSound" src="click.mp3"></audio>
+<audio id="paperSound" src="paper.mp3"></audio>
+<audio id="pageSound" src="page.mp3"></audio>
+
+<!-- ================= WELCOME PAGE ================= -->
+<div class="welcome" id="welcome">
+  <div class="welcome-card">
+    <h1>
+      <span class="valentine-title">Happy Valentine’s Day</span><br>
+      <span class="name-highlight">My Bangari 💖</span>
+    </h1>
+
+    <p class="question">Will you be my Valentine forever? 💍</p>
+
+    <div class="buttons">
+      <button class="yes-btn" onclick="enterLove()">YES 💖</button>
+      <button class="no-btn" id="noBtn" onclick="noClicked()">NO</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= DRAG SCENE ================= -->
+<div class="scene" id="scene">
+  <button class="back-btn" onclick="goBackToWelcome()">← Back</button>
+
+  <div class="paper envelope" id="envelope" onclick="openEnvelope(event)">
+    <div class="flap"></div>
+    💌
+  </div>
+
+  <div class="paper image"><div class="caption">Spoorthi — my calm and my forever 💖</div><img src="photo1.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — where my heart feels home 🫶</div><img src="photo2.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — Not a perfect man,
+But I will give my best efforts for you 🥹</div><img src="photo3.png"></div>
+  <div class="paper image"><div class="caption">Spoorthi — my today and all tomorrows 💍</div><img src="photo4.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — You come into my life unexpectedly and I'm addicted to you permanently..
+ 💕</div><img src="photo5.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — the reason I believe in forever ✨</div><img src="photo6.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — my heart chose you 💘</div><img src="photo7.png"></div>
+  <div class="paper image"><div class="caption">Spoorthi — my favorite chapter 💞</div><img src="photo10.jpg"></div>
+  <div class="paper image"><div class="caption">Spoorthi — forever starts with you ❤️</div><img src="photo9.webp"></div>
+</div>
+
+<!-- ================= LOVE LETTER ================= -->
+<div class="letter-screen" id="letterScreen">
+  
+  <div class="letter-paper">
+    <p id="letterText"></p>
+    <div class="signature">— Your's Bangara 💖</div>
+
+    <button class="forever-btn" onclick="openAlbum()">
+      💍 Will you be my forever?
+    </button>
+  </div>
+
+  <button class="back-btn" onclick="closeLetter()">← Back</button>
+</div>
+
+
+<!-- ================= ALBUM (FINAL APPROVED MODEL) ================= -->
+<div class="album-screen" id="albumScreen">
+  <button class="back-btn" onclick="closeAlbum()">← Back</button>
+
+  <div class="album-container">
+
+    <!-- COVER -->
+    <div class="album-view cover-view active">
+      <div class="cover-content">
+        Let’s see our future<br>
+        AI version album 🙃
+      </div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          One beautiful day, we promise forever 💍<br><br>
+          Beginning our life together with love and dreams.
+        </div>
+        <div class="page photo-page">
+          <img src="ph1.png" alt="Memory 1">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          Traveling the world ✈️<br><br>
+          Collecting memories hand in hand.
+        </div>
+        <div class="page photo-page">
+          <img src="ph2.png" alt="Memory 2">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          Two tiny miracles 👶👶<br><br>
+          Our hearts grow bigger every day.
+        </div>
+        <div class="page photo-page">
+          <img src="ph3.png" alt="Memory 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          Life with our children 🧸<br><br>
+          Stories, laughter, and endless hugs.
+        </div>
+        <div class="page photo-page">
+          <img src="ph4.png" alt="Memory 4">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          Enjoying life 🌸<br><br>
+          Proud of the family we built.
+        </div>
+        <div class="page photo-page">
+          <img src="ph5.png" alt="Memory 5">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="album-view">
+      <div class="page-frame">
+        <div class="page text-page">
+          Growing old together 🕊️<br><br>
+          Still choosing each other every day.
+        </div>
+        <div class="page photo-page">
+          <img src="ph6.png" alt="Memory 6">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
