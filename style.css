@@ -371,18 +371,21 @@ body {
 
 /* ================= MOBILE ================= */
 @media (max-width: 420px) {
+
+  body {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    min-height: 100vh;         /* full screen height */
+  }
+
   .album-container {
-    height: 90%;
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
     position: relative;
   }
-  .album-screen {
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle, #2b1b12, #0f0704);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
+
 }
 
   .text-page {
