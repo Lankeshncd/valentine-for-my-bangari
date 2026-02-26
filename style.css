@@ -375,6 +375,15 @@ body {
     height: 90%;
     position: relative;
   }
+  .album-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #2b1b12, #0f0704);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
 
   .text-page {
     font-size: 18px;
